@@ -1,0 +1,840 @@
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------CSS DE LA PAGE ADMIN-----------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+body{
+    background-image: url("/conges/View/img/fond.png");
+    width: 1900px;
+
+    font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+
+}
+header {
+    text-align: center;
+}
+
+
+
+
+footer{
+	margin-top: 650px;
+	margin-left: 520px;
+}
+    #nav {  
+        padding: 0; margin-bottom: 40px;  
+        text-align: center; /* centrer le texte */  
+    }  
+    #nav li {  
+        display: inline;  
+        list-style: none;  
+    }  
+    #nav a {  
+        display:inline-block;  
+        margin: 0 30px;  
+
+    }  
+    #nav {
+        border: 1px solid #333;
+        border-top-color: #707070;
+        background-color: #5E5E5E;
+    background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+        background: linear-gradient(bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+        text-align: center;
+        height: 36px;
+        -webkit-box-shadow: 0 1px 3px #999;
+        -moz-box-shadow: 0 1px 3px #999;
+        box-shadow: 0 1px 3px #999;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+    }
+    #nav a {
+        height: 36px;
+        margin:0;
+        padding: 0 35px;
+        line-height: 36px;
+        border-left: 1px solid #555;
+        border-right: 1px solid #888;
+        text-decoration: none;
+        color: white;
+        text-shadow: -1px -1px 0 #444;
+        font-family: Helvetica, Arial, Verdana, sans-serif;
+        font-size: 1em;
+    }
+    #nav :first-child a {
+        border-left: 0;
+    }
+    #nav :last-child a {
+        border-right: 0;
+    }
+    #nav a:hover,
+    #nav a:focus {
+        background-color: #3E3E3E;
+    background-image: -moz-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
+
+    }
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------CSS DU RESUME------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+.admin_agenda_resume{ 
+
+  float: left;
+}
+
+ul,
+ul ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+ul,
+ul ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#wrapper {
+
+    margin: 50px auto;
+    font-size: 0.8125em;
+}
+.resume {
+    width: 250px;
+    height: auto;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+}
+.resume > li > a {
+    background-color: #616975;
+    background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+    border-bottom: 1px solid #33373d;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #878e98;
+    -moz-box-shadow: inset 0px 1px 0px 0px #878e98;
+    box-shadow: inset 0px 1px 0px 0px #878e98;
+    width: 100%;
+    height: 2.75em;
+    line-height: 2.75em;
+    text-indent: 2.75em;
+    display: block;
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+}
+.resume ul li a {
+    background: #fff;
+    border-bottom: 1px solid #efeff0;
+    width: 100%;
+    height: 2.75em;
+    line-height: 2.75em;
+    text-indent: 2.75em;
+    display: block;
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.923em;
+    font-weight: 400;
+    color: #878d95;
+}
+.resume ul li:last-child a {
+    border-bottom: 1px solid #33373d;
+}
+
+.resume > li > a:hover,
+.resume > li > a.active {
+    background-color: #35afe3;
+    background-image: -moz-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
+    border-bottom: 1px solid #103c56;
+    -moz-box-shadow: inset 0px 1px 0px 0px #6ad2ef;
+    box-shadow: inset 0px 1px 0px 0px #6ad2ef;
+}
+.resume > li > a.active {
+    border-bottom: 1px solid #1a638f;
+}
+
+.solde_restant {
+        width: 250px;
+    border-bottom: 1px solid #33373d;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #878e98;
+    -moz-box-shadow: inset 0px 1px 0px 0px #878e98;
+    box-shadow: inset 0px 1px 0px 0px #878e98;
+
+    height: 2.75em;
+    line-height: 2.75em;
+    text-indent: 2.75em;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    background-color: #35afe3;
+    background-image: -moz-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
+    border-bottom: 1px solid #103c56;
+    -moz-box-shadow: inset 0px 1px 0px 0px #6ad2ef;
+    box-shadow: inset 0px 1px 0px 0px #6ad2ef;
+}
+
+.resume > li > a span {
+    font-size: 0.857em;
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    background: #48515c;
+    line-height: 1em;
+    height: 1em;
+    padding: .4em .6em;
+    margin: -.8em 0 0 0;
+    color: #fff;
+    text-indent: 0;
+    text-align: center;
+    -webkit-border-radius: .769em;
+    -moz-border-radius: .769em;
+    border-radius: .769em;
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    font-weight: 500;
+}
+
+
+.resume > li > a:hover span, .resume > li a.active span,{
+    background: #2173a1;
+}
+
+.resume > li.nombre_conge{
+    background-color: yellow;
+}
+
+.resume ul > li > a span {
+    font-size: 0.857em;
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    background: #fff;
+    border: 1px solid #d0d0d3;
+    line-height: 1em;
+    height: 1em;
+    padding: .4em .7em;
+    margin: -.9em 0 0 0;
+    color: #878d95;
+    text-indent: 0;
+    text-align: center;
+    -moz-border-radius: 769em;
+    border-radius: 769em;
+}
+.resume > li > ul li a:before {
+    content: '▶';
+    font-size: 8px;
+    color: #bcbcbf;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 0;
+    left: -2.7em;
+}
+.resume > li > ul li:hover a,
+.resume > li > ul li:hover a span,
+.resume > li > ul li:hover a:before {
+    color: #32373D;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------CSS DU CALENDRIER--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+.cal {
+    margin-top: 30px;
+    margin-left: 350px;
+    width: 15.625em; 
+    height: 16.25em;
+    position: absolute;
+    font-size: 81.25%; 
+    width: 700px;
+    height: 550px;
+    text-align: center;
+    border-spacing: 0; /* Set this to allow rounded corners to work */
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border: 1px solid rgb(20,20,20);
+    border-radius: 10px 10px 0 0;
+
+
+}
+.cal td, .cal th {
+    font-weight: 400;
+    width: 12.5%;
+}
+.cal td {
+    text-shadow: 1px 1px 1px black;
+    border-top: 1px solid rgb(20,20,20);
+    border-left: 1px solid rgb(20,20,20);
+}
+.cal_title {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+.cal_header th {
+    padding: 5% 0;
+    background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+    height: 17%;
+    border-bottom: 1px solid rgb(20,20,20);
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.15) inset, 0 -1px 0 rgba(255,255,255,0.15) inset;
+    font-size: large;
+}
+.cal_header th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.cal_header th:last-child {
+    border-radius: 0 10px 0 0;
+}
+.cal_precedent,.cal_suivant {
+    display: block;
+    position: relative;
+    z-index: 2;
+    text-align: right;
+    color: silver;
+    font-weight: 700;
+    font-size: 150%;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,1.0);
+}
+.cal_precedent {
+    text-align: left;
+    padding-left: 25%;
+}
+.cal_suivant {
+    padding-right: 25%;
+}
+.cal_precedent:hover, .cal_precedent:focus,
+.cal_suivant:hover, .cal_suivant:focus {
+    color: rgb(27,147,169);
+}
+.cal_jour {
+    width: 75%;
+
+
+    color: white;
+
+    background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+    border-top: 1px solid rgb(119,119,119);
+    border-bottom: 1px solid rgb(20,20,20);
+    color: white;
+    font-size: 90%;
+    text-shadow: 1px 1px 1px black;
+}
+.cal_jour th {
+    line-height: 1.5;
+}
+.jour {
+    background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+    color: white;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.15) inset, 1px 0 0 rgba(255,255,255,0.15) inset;
+}
+.jour:hover,
+.jour:focus {
+    background-image: -moz-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
+}
+
+.jour_hors_mois {
+    background-image: -moz-linear-gradient(rgb(37,37,37), rgb(26,26,26));
+    color: rgb(78,78,78);
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 1px 0 0 rgba(255,255,255,0.05) inset;
+}
+
+/* Events are highlighted */
+.jour_ferie {
+    color: rgb(69, 199, 235);
+    background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+
+}
+
+
+
+.conge{
+    color: rgb(141, 251, 168);
+    background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+}
+
+
+/* Calendar visual tweaks */
+
+/* Remove double borders from perimeter */
+.cal tbody tr td:nth-of-type(1) {
+    border-left: none;
+}
+.cal tbody tr td:nth-of-type(7) {
+    border-right: none;
+}
+.cal tbody tr:nth-of-type(6) td {
+    border-bottom: none;
+}
+/* Remove extra border on left hand table cells */
+.cal tbody tr:nth-of-type(1n+1) td.jour:first-child {
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.15) inset;
+}
+.cal tbody tr:nth-of-type(1n+1) td.jour_hors_mois:first-child {
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------CSS DES BOUTONS----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+.admin_agenda_bouton{
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    width: 780px;
+}
+
+
+#select{
+margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    width: 200px;
+
+
+}
+
+#admin_bouton_config {
+
+    width:350px;
+    margin-bottom: 50px;
+    background: #3e9cbf; /*the colour of the button_ferie*/
+    padding: 8px 14px 10px; /*apply some padding inside the button*/
+    border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    /*style the text*/
+    font-size:1.5em;
+    font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+    letter-spacing:.1em;
+    text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+    color: #fff;
+    /*use box-shadow to give the button some depth - see cssdemos.tupence.co.uk/box-shadow.htm#demo7 for more info on this technique*/
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+    box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+    /*give the corners a small curve*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/***SET THE BUTTON'S HOVER AND FOCUS STATES***/
+#admin_bouton_config:hover, #admin_bouton_config:focus {
+    color:#dfe7ea;
+    /*reduce the size of the shadow to give a pushed effect*/
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+    box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------CSS DES BOUTONS AJOUTERS ET SUPPR-------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.container_ajouter{
+    position:relative;
+    float: left;
+
+}
+
+
+#button_ajouter {
+    border-radius: 10px;
+    font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+    letter-spacing:.1em;
+    -moz-text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+    z-index: 2;
+    width: 340px;
+    background: #3e9cbf;
+    text-align: center;
+    height: 102px;
+    padding: 5px;
+    border-radius: 0px 0px 2px 2px;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+
+}
+#button_ajouter:hover {
+    background: #3e9cbf;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+
+    cursor: pointer;
+}
+#dropbox_ajouter, #button_ajouter {
+    right: 30%;
+    color: #eee;
+
+}
+#dropbox_ajouter .title {
+    padding:5px;
+
+}
+#dropbox_ajouter {
+    z-index: 1;
+    background: #222222;
+    width: 350px;
+    display: none;
+    -moz-box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+}
+#dropbox_ajouter .title {
+    background: #414141;
+    margin-bottom: 0px;
+}
+#dropbox_ajouter, #button_ajouter h6 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+#dropbox_ajouter .contact-form {
+    margin: 10px;
+}
+#dropbox_ajouter textarea {
+    font: 100%/120% Tahoma, Geneva, sans-serif;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px 0px;
+    background: #444444;
+    color: #eee;
+}
+#dropbox_ajouter textarea {
+    height: 60px;
+}
+#dropbox_ajouter input[type=submit] {
+    margin-bottom: 10px;
+    width: 330px;
+    cursor: pointer;
+    color: #999;
+}
+#dropbox_ajouter input[type=submit]:hover {
+    background: #3b3b3b;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*-------------CSS DE SUPPRIMER----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.container_suppr{
+    position:relative;
+    float: right;
+
+}
+
+#button_suppr {
+    
+    border-radius: 10px;
+    font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+    letter-spacing:.1em;
+    -moz-text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+    z-index: 2;
+    width: 340px;
+    background: #3e9cbf;
+    text-align: center;
+    height: 102px;
+    padding: 5px;
+    border-radius: 0px 0px 2px 2px;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+
+}
+#button_suppr:hover {
+    background: #3e9cbf;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+
+    cursor: pointer;
+}
+#dropbox_suppr, #button_suppr {
+    right: 30%;
+    color: #eee;
+
+}
+#dropbox_suppr .title {
+    padding:5px;
+
+}
+#dropbox_suppr {
+    z-index: 1;
+    background: #222222;
+    width: 350px;
+    display: none;
+    -moz-box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+}
+#dropbox_suppr .title {
+    background: #414141;
+    margin-bottom: 0px;
+}
+#dropbox_suppr, #button_suppr h6 {
+/*    font: 120%/140% Tahoma, Geneva, sans-serif;
+*/    font-size: 1em;
+text-transform: uppercase;
+}
+#dropbox_suppr .contact-form {
+    margin: 10px;
+}
+#dropbox_suppr textarea {
+    font: 100%/120% Tahoma, Geneva, sans-serif;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px 0px;
+    background: #444444;
+    color: #eee;
+}
+#dropbox_suppr textarea {
+    height: 60px;
+}
+#dropbox_suppr input[type=submit] {
+    margin-bottom: 10px;
+    width: 330px;
+    cursor: pointer;
+    color: #999;
+}
+#dropbox_suppr input[type=submit]:hover {
+    background: #3b3b3b;
+}
+
+
+.suppr_debut_journee,.suppr_fin_journee,.ajout_nouveau_debut_journee,.ajout_nouveau_fin_journee{
+    float: right;    
+    width: 100px;
+    margin-top: 20px;
+}
+
+.line{
+    position: relative;
+}
+
+.container_conge{
+    float: right;
+    margin-top: 100px;
+    margin-right: 150px;
+}
+
+.container_ferie{
+    float: left;
+    margin-top: 100px;
+
+    margin-left: 150px;
+}
+
+
+
+#button_ferie {
+    border-radius: 10px;
+    font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+    letter-spacing:.1em;
+    -moz-text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+    z-index: 2;
+    width: 340px;
+    background: #3e9cbf;
+    text-align: center;
+    height: 102px;
+    padding: 5px;
+    border-radius: 0px 0px 2px 2px;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+
+}
+#button_ferie:hover {
+    background: #3e9cbf;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+
+    cursor: pointer;
+}
+#dropbox_ferie, #button_ferie {
+    right: 30%;
+    color: #eee;
+
+}
+#dropbox_ferie .title {
+    padding:5px;
+
+}
+#dropbox_ferie {
+    z-index: 1;
+    background: #222222;
+    width: 350px;
+    display: none;
+    -moz-box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+}
+#dropbox_ferie .title {
+    background: #414141;
+    margin-bottom: 0px;
+}
+#dropbox_ferie, #button_ferie h6 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+#dropbox_ferie .contact-form {
+    margin: 10px;
+}
+#dropbox_ferie textarea {
+    font: 100%/120% Tahoma, Geneva, sans-serif;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px 0px;
+    background: #444444;
+    color: #eee;
+}
+#dropbox_ferie textarea {
+    height: 60px;
+}
+#dropbox_ferie input[type=submit] {
+    margin-bottom: 10px;
+    width: 330px;
+    cursor: pointer;
+    color: #999;
+}
+#dropbox_ferie input[type=submit]:hover {
+    background: #3b3b3b;
+}
+
+
+#button_conge {
+    border-radius: 10px;
+    font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+    letter-spacing:.1em;
+    -moz-text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+    z-index: 2;
+    width: 340px;
+    background: #3e9cbf;
+    text-align: center;
+    height: 102px;
+    padding: 5px;
+    border-radius: 0px 0px 2px 2px;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+
+}
+#button_conge:hover {
+    background: #3e9cbf;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+
+    cursor: pointer;
+}
+#dropbox_conge, #button_conge {
+    right: 30%;
+    color: #eee;
+
+}
+#dropbox_conge .title {
+    padding:5px;
+
+}
+#dropbox_conge {
+    z-index: 1;
+    background: #222222;
+    width: 350px;
+    display: none;
+    -moz-box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.75);
+}
+#dropbox_conge .title {
+    background: #414141;
+    margin-bottom: 0px;
+}
+#dropbox_conge, #button_conge h6 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+#dropbox_conge .contact-form {
+    margin: 10px;
+}
+#dropbox_conge textarea {
+    font: 100%/120% Tahoma, Geneva, sans-serif;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px 0px;
+    background: #444444;
+    color: #eee;
+}
+#dropbox_conge textarea {
+    height: 60px;
+}
+#dropbox_conge input[type=submit] {
+    margin-bottom: 10px;
+    width: 330px;
+    cursor: pointer;
+    color: #999;
+}
+#dropbox_conge input[type=submit]:hover {
+    background: #3b3b3b;
+}

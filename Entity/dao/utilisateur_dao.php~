@@ -1,0 +1,93 @@
+<?php
+include_once "/var/www/conges/Entity/dao/dao.php";
+include_once "/var/www/conges/Entity/business/utilisateur.php";
+/******************************************************************************/
+// Class utilisateur_dao
+/******************************************************************************/
+class utilisateur_dao extends dao {
+
+  function find($login)
+  {
+    $query  = "SELECT * FROM UTILISATEUR WHERE login= :login;"; 
+    $prepared_query = $this->database->prepare($query);
+    $prepared_query->bindParam(':login', $login);
+        
+    if (($prepared_query->execute())&&($prepared_query->rowCount()>0))
+    {
+      $resultat = $prepared_query->fetch(PDO::FETCH_ASSOC);
+
+      $login = $resultat['login'];
+      $mot_de_passe = $resultat['mot_de_passe'];
+      $type_compte = $resultat['type_compte'];
+      $solde = $resultat['solde'];
+
+      $utilisateur = new utilisateur($login,$mot_de_passe,$type_compte,$solde);
+      $utilisateur->setlogin($login);    
+      return $utilisateur;
+    }
+    else return false;
+  }
+  
+  function insert(&$object)
+  {
+    $login = $object->getLogin();
+    $mot_de_passe = $object->getmot_de_passe();
+    $type_compte = $object->gettype_compte();
+    $solde = $object->getsolde();
+    $query  = "INSERT INTO utilisateur (login, mot_de_passe, type_compte, solde) VALUES (:login,:mot_de_passe,:type_compte,:solde);";
+
+    $prepared_query = $this->database->prepare($query);
+    $prepared_query->bindParam(':login', $login);
+    $prepared_query->bindParam(':mot_de_passe', $mot_de_passe);
+    $prepared_query->bindParam(':type_compte', $type_compte);
+    $prepared_query->bindParam(':solde', $solde);
+    if ($prepared_query->execute())
+    {
+      $object->setlogin($this->database->lastinsertid());
+      return true;
+    }
+    else return false;
+  }
+  
+  function update(&$object)
+  {
+ 
+    $login = $object->getLogin();
+    $mot_de_passe = $object->getmot_de_passe();
+    $type_compte = $object->gettype_compte();
+    $solde = $object->getsolde();
+    $query  = "UPDATE utilisateur SET login=:login, mot_de_passe=:mot_de_passe, type_compte=:type_compte, solde=:solde WHERE login = :login;";
+
+    $prepared_query = $this->database->prepare($query);
+    $prepared_query->bindParam(':login', $login);
+    $prepared_query->bindParam(':mot_de_passe', $mot_de_passe);
+    $prepared_query->bindParam(':type_compte', $type_compte);
+    $prepared_query->bindParam(':solde', $solde);
+    if ($prepared_query->execute())
+    {
+      return true;
+    }
+    else return false;
+  }
+
+  function delete(&$object)
+  {
+    $id = $object->getutilisateur_id();
+    $query  = "DELETE FROM utilisateur WHERE login = :login;";
+
+    $prepared_query = $this->database->prepare($query);
+    $prepared_query->bindParam(':login', $login);
+
+    if ($prepared_query->execute())
+    {
+      $object=null;
+      return true;
+    }
+    else return false;
+  }
+
+
+}
+
+?>
+
